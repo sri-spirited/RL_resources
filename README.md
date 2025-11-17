@@ -39,14 +39,24 @@ Repo for documenting knowledge and codes on RL
 
 * **Experience** is the set of the state, the action, the reward, and the new state
 * **Experience tuples** is a representation of experiences 
-![Image](img/experience_tuples.png)
+![Image](img/experience_tuples.PNG)
 * **Episodic taks** have a natural ending (e.g. a game)
 * **Continuing tasks** have dont have a natural ending, e.g. learning forward motion
 * **Cycle** is a *time-step*, interactions between agents and the environment go on for several cycles
 * **Temporal credit assignment problem** is the challenge of determining which state and/or action is responsible for a reward, because:
     * action taken by the agent may have delayed consequences
     * reward may be sparse and only manifest after several time steps
+* **Model based** RL lgorithms learn a model of the environment and use this model to make predictions about how the environment will change in the future
+* **Model-free** RL algorithms do not learn a model of the environment. Instead they directly learn which actions lead to the most reward. This can be faster and easier to learn, but it can also be less efficient in the long run.
 
+# Algorithmic approaches
+* Derivative-free
+* Policy-based
+* Actor-critic
+* Value-based
+* Model-based
+
+# Resources
 1. Grokking Deep Reinforcement Learning, Miguel Morales
     * Read at https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-1#1
     * Code at https://github.com/mimoralea/gdrl)
